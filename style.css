@@ -1,0 +1,28 @@
+:root {
+    --dark-color: #2D4153;
+    --light-color: #869098;
+    --vibrant-color: #3784C7;
+    color: var(--dark-color);
+    font-family: 'Karla', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 130px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links>h2 {
+    margin-left: 50px;
+}
