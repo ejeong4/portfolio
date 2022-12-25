@@ -38,7 +38,7 @@ nav {
 .hello>h2 {
     color: var(--light-color);
     font-weight: 100;
-    margin: 50px 0;
+    margin: 80px 0 50px 0;
 }
 
 button {
@@ -49,6 +49,10 @@ button {
     color: var(--vibrant-color);
     padding: 15px 20px;
     border-radius: 7px;
+}
+
+a {
+    cursor: pointer;
 }
 
 .projects {
@@ -64,4 +68,34 @@ button {
     height: 300px;
     width: 450px;
     border-radius: 15px;
+}
+
+@media (max-width: 1000px) {
+    .projects {
+        display: block;
+    }
+    .projects div {
+        margin: 0 auto 50px auto;
+    }
+}
+
+@media (max-width: 750px) {
+    nav {
+        display: block;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    .links {
+        display: block;
+        text-align: center;
+    }
+    .links>h2 {
+        margin: 10px 0;
+    }
+    .hello {
+        width: 80%;
+    }
+    .projects div {
+        width: 70%;
+    }
 }
