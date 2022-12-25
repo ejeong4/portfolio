@@ -1,7 +1,7 @@
 :root {
     --dark-color: #2D4153;
-    --light-color: #869098;
-    --vibrant-color: #3784C7;
+    --light-color: #949ba1;
+    --vibrant-color: #3f91d8;
     color: var(--dark-color);
     font-family: 'Karla', sans-serif;
 }
@@ -16,6 +16,7 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     margin: 50px 130px;
+    font-size: 14px;
 }
 
 .links {
@@ -25,4 +26,42 @@ nav {
 
 .links>h2 {
     margin-left: 50px;
+    color: var(--light-color);
+}
+
+.hello {
+    width: 600px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+}
+
+.hello>h2 {
+    color: var(--light-color);
+    font-weight: 100;
+    margin: 50px 0;
+}
+
+button {
+    background-color: white;
+    border: 2px solid var(--vibrant-color);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    color: var(--vibrant-color);
+    padding: 15px 20px;
+    border-radius: 7px;
+}
+
+.projects {
+    display: grid;
+    justify-content: center;
+    margin-top: 100px;
+    grid-template-columns: repeat(2, 450px);
+    gap: 50px;
+}
+
+.projects div {
+    background-color: var(--light-color);
+    height: 300px;
+    width: 450px;
+    border-radius: 15px;
 }
