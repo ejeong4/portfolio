@@ -39,8 +39,11 @@ button {
     border-radius: 7px;
 }
 
+button a {
+    color: var(--vibrant-color);
+}
+
 a {
-    /* color: var(--vibrant-color); */
     cursor: pointer;
     text-decoration: none;
 }
