@@ -1,7 +1,7 @@
 :root {
-    --dark-color: #2D4153;
-    --light-color: #949ba1;
-    --vibrant-color: #3f91d8;
+    --dark-color: #2d4d53;
+    --light-color: #aebec4;
+    --vibrant-color: #6daeeb;
     color: var(--dark-color);
     font-family: 'Karla', sans-serif;
 }
@@ -17,6 +17,10 @@ nav {
     justify-content: space-between;
     margin: 50px 130px;
     font-size: 14px;
+}
+
+strong {
+    color: var(--vibrant-color);
 }
 
 .links {
@@ -63,18 +67,26 @@ a {
     gap: 50px;
 }
 
-.projects div {
+.projects img {
     background-color: var(--light-color);
     height: 300px;
     width: 450px;
     border-radius: 15px;
+    object-fit: cover;
+}
+
+footer {
+    color: var(--light-color);
+    text-align: center;
+    margin: 100px 0 50px 0;
 }
 
 @media (max-width: 1000px) {
     .projects {
         display: block;
+        text-align: center;
     }
-    .projects div {
+    .projects img {
         margin: 0 auto 50px auto;
     }
 }
@@ -95,7 +107,7 @@ a {
     .hello {
         width: 80%;
     }
-    .projects div {
+    .projects img {
         width: 70%;
     }
 }
