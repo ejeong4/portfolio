@@ -4,6 +4,7 @@
     --vibrant-color: #6daeeb;
     --fade-color: #eaf5ff;
     --medium-color: rgb(125, 138, 143);
+    --shadow-color: #dee1e2;
     color: var(--dark-color);
     font-family: 'Karla', sans-serif;
 }

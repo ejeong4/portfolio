@@ -1,13 +1,13 @@
 header {
-    margin: 0 auto 80px auto;
+    margin: 0 auto;
     text-align: center;
     width: 800px;
 }
 
 article {
-    margin: 0 auto;
+    margin: 80px auto;
     text-align: center;
-    width: 700px;
+    width: 70%;
 }
 
 header img {
@@ -16,23 +16,32 @@ header img {
     border-radius: 15px;
 }
 
-.img-grid {}
+figure {
+    float: left;
+    padding: 0;
+    margin: 30px 5px;
+}
 
 .img-grid img {
-    object-fit: contain;
-    height: 300px;
-    width: 300px;
-    border-radius: 15px;
-    background-color: gray;
-    margin: 30px 0;
+    border: 2px solid var(--shadow-color);
+    border-radius: 10px;
 }
 
 article p {
+    clear: both;
     color: var(--medium-color);
     font-size: 20px;
-    text-align: justify;
+    text-align: center;
     line-height: 1.7;
     text-indent: 50px;
+}
+
+article h1 {
+    clear: both;
+}
+
+article h3 {
+    text-align: left;
 }
 
 header h2 {
@@ -47,6 +56,9 @@ header h2 {
     }
     .img-grid {
         display: block;
+    }
+    .img-grid img {
+        width: 80%;
     }
     header,
     article {
