@@ -31,9 +31,11 @@ article p {
     clear: both;
     color: var(--medium-color);
     font-size: 20px;
-    text-align: center;
+    text-align: justify;
     line-height: 1.7;
     text-indent: 50px;
+    width: 800px;
+    margin: 0 auto;
 }
 
 article h1 {
@@ -41,7 +43,8 @@ article h1 {
 }
 
 article h3 {
-    text-align: left;
+    margin: 30px auto 15px auto;
+    text-align: center;
 }
 
 header h2 {
@@ -61,7 +64,8 @@ header h2 {
         width: 80%;
     }
     header,
-    article {
+    article,
+    p {
         width: 80%;
     }
 }
