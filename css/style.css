@@ -1,8 +1,9 @@
 :root {
     --dark-color: #2d4d53;
     --light-color: #aebec4;
-    --vibrant-color: #6daeeb;
+    --vibrant-color: #73b2ec;
     --fade-color: #eaf5ff;
+    /* --fade-color: #fcf6c5; */
     --hover-color: #dcedfa;
     --medium-color: rgb(125, 138, 143);
     --shadow-color: #dee1e2;
@@ -100,7 +101,7 @@ header {
 article {
     margin: 80px auto;
     text-align: center;
-    width: 70%;
+    width: 700px;
 }
 
 header img {
@@ -127,7 +128,7 @@ article p {
     text-align: justify;
     line-height: 1.7;
     text-indent: 50px;
-    width: 800px;
+    /* width: 700px; */
     margin: 0 auto;
 }
 
