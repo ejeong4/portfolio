@@ -23,6 +23,10 @@ nav {
     margin: auto 0;
 }
 
+.logo:hover {
+    background-color: var(--hover-color);
+}
+
 .logo a {
     color: var(--vibrant-color);
 }

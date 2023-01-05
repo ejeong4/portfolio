@@ -3,6 +3,7 @@
     --light-color: #aebec4;
     --vibrant-color: #6daeeb;
     --fade-color: #eaf5ff;
+    --hover-color: #dcedfa;
     --medium-color: rgb(125, 138, 143);
     --shadow-color: #dee1e2;
     color: var(--dark-color);
@@ -40,6 +41,11 @@ button {
     border-radius: 7px;
 }
 
+button:hover {
+    background-color: var(--hover-color);
+    cursor: pointer;
+}
+
 button a {
     color: var(--vibrant-color);
 }
@@ -57,12 +63,23 @@ a {
     gap: 50px;
 }
 
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project p {
+    color: var(--dark-color);
+}
+
 .projects img {
     background-color: var(--light-color);
     height: 300px;
     width: 450px;
     border-radius: 15px;
     object-fit: cover;
+    /* margin-bottom: 0; */
 }
 
 footer {
@@ -71,13 +88,85 @@ footer {
     margin: 100px 0 50px 0;
 }
 
+
+/* projects */
+
+header {
+    margin: 0 auto;
+    text-align: center;
+    width: 800px;
+}
+
+article {
+    margin: 80px auto;
+    text-align: center;
+    width: 70%;
+}
+
+header img {
+    object-fit: contain;
+    height: 400px;
+    border-radius: 15px;
+}
+
+figure {
+    float: left;
+    padding: 0;
+    margin: 30px 5px;
+}
+
+.img-grid img {
+    border: 2px solid var(--shadow-color);
+    border-radius: 10px;
+}
+
+article p {
+    clear: both;
+    color: var(--medium-color);
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.7;
+    text-indent: 50px;
+    width: 800px;
+    margin: 0 auto;
+}
+
+article h1 {
+    clear: both;
+}
+
+article h3 {
+    margin: 30px auto 15px auto;
+    text-align: center;
+}
+
+header h2 {
+    color: var(--light-color);
+    font-weight: 100;
+}
+
 @media (max-width: 1000px) {
     .projects {
         display: block;
         text-align: center;
     }
-    .projects img {
+    .project {
         margin: 0 auto 50px auto;
+    }
+    header img {
+        width: 80%;
+        height: fit-content;
+    }
+    .img-grid {
+        display: block;
+    }
+    .img-grid img {
+        width: 80%;
+    }
+    header,
+    article,
+    article p {
+        width: 80%;
     }
 }
 
