@@ -20,6 +20,11 @@ strong {
     color: var(--vibrant-color);
 }
 
+#profile-pic {
+    width: 300px;
+    border-radius: 20px;
+}
+
 .hello {
     width: 600px;
     margin: 100px auto 0 auto;
