@@ -140,7 +140,8 @@ figcaption {
     box-shadow: 0 5px 30px var(--shadow-color);
 }
 
-article p {
+article p,
+.hello p {
     clear: both;
     color: var(--medium-color);
     font-size: 20px;
