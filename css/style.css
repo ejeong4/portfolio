@@ -118,6 +118,7 @@ header img {
 .timeline {
     /* font-style: italic; */
     color: var(--light-color);
+    text-align: center;
 }
 
 figure {
