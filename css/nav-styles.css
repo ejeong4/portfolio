@@ -8,10 +8,12 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(248, 251, 255, 0.2);
+    box-shadow: 0 0 100px rgba(211, 213, 214, 0.466);
+    background-color: rgba(220, 224, 228, 0.2);
     backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
 }
+
 
 @supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
   (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
@@ -20,7 +22,7 @@ nav {
     padding-top: 15px;
     padding-bottom: 15px;
     background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   }
 }
@@ -35,6 +37,7 @@ nav {
 .links a {
     color: var(--dark-color);
     display: block;
+
 }
 
 .links a:hover {
