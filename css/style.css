@@ -1,7 +1,7 @@
 :root {
     --dark-color: #2d4d53;
     --light-color: #899aa0;
-    --vibrant-color: #73b2ec;
+    --vibrant-color: #3297f5;
     --fade-color: #eaf5ff;
     /* --fade-color: #fcf6c5; */
     --hover-color: #dcedfa;
@@ -13,11 +13,29 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 100px 0 0 0;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+ol, ul {
+    font-size: 18px;
+    line-height: 1.5;
+
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 strong {
-    color: var(--vibrant-color);
+    /* color: var(--vibrant-color); */
 }
 
 #profile-pic {
@@ -25,6 +43,45 @@ strong {
     border-radius: 20px;
 }
 
+.sidebar {
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    margin-top: 300px;
+    margin-left: 130px;
+}
+
+@media only screen and (max-width: 1500px) {
+    .sidebar {
+        margin-top: 250px;
+        margin-left: 60px;
+    }
+} 
+@media only screen and (max-width: 1300px) {
+    .sidebar {
+        margin-top: 250px;
+        margin-left: 20px;
+    }
+} 
+@media only screen and (max-width: 1100px) {
+    .sidebar {
+
+        display: none;
+    }
+} 
+
+.sidebar a {
+    display: block;
+    color: var(--medium-color);
+    padding-bottom: 20px;
+    font-size: 18px;
+}
+
+.sidebar a:hover {
+    color: var(--dark-color);
+}
 .hello {
     width: 600px;
     margin: 100px auto 0 auto;
@@ -32,7 +89,7 @@ strong {
 }
 
 .hello>h2 {
-    color: var(--light-color);
+
     font-weight: 100;
     margin: 80px 0 50px 0;
 }
@@ -47,9 +104,20 @@ button {
     border-radius: 7px;
 }
 
+@keyframes hoverBtnAnimation {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: var(--hover-color);
+     }
+}
+
 button:hover {
     background-color: var(--hover-color);
     cursor: pointer;
+    animation: hoverBtnAnimation 0.4s;
+    
 }
 
 button a {
@@ -73,10 +141,31 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 15px;
+    /* margin: 30px; */
+}
+
+.project:hover {
+    /* background: #f1f1f1; */
+    animation: hoverAnimation ease-in-out .4s;
+    animation-fill-mode: both;
+}
+
+@keyframes hoverAnimation {
+    0% {
+        background-color: white;
+    }
+    100% {
+        background-color: #e6e6e6;
+     }
+}
+
+.project {
+    /* box-shadow: 0 5px 20px var(--shadow-color); */
 }
 
 .project h3 {
-    color: var(--medium-color);
+    color: var(--dark-color);
 }
 
 .projects img {
@@ -85,11 +174,12 @@ a {
     width: 450px;
     border-radius: 15px;
     object-fit: cover;
+    /* border: 2px solid var(--vibrant-color); */
     /* margin-bottom: 0; */
 }
 
 footer {
-    color: var(--light-color);
+    color: var(--dark-color);
     text-align: center;
     margin: 100px 0 50px 0;
 }
@@ -105,7 +195,7 @@ header {
 
 article {
     margin: 80px auto;
-    text-align: center;
+    /* text-align: center; */
     width: 700px;
 }
 
@@ -117,21 +207,22 @@ header img {
 
 .timeline {
     /* font-style: italic; */
-    color: var(--light-color);
+    /* color: var(--light-color); */
     text-align: center;
 }
 
 figure {
-    /* text-align: center;
-    float: left; */
+    text-align: center;
+    /* float: left; */
     padding: 0;
     margin: 30px 5px;
 }
 
 figcaption {
     font-style: italic;
-    color: var(--medium-color);
+    /* color: var(--medium-color); */
     margin-top: 10px;
+    text-align: center;
 }
 
 .img-grid img {
@@ -144,27 +235,34 @@ figcaption {
 article p,
 .hello p {
     clear: both;
-    color: var(--medium-color);
-    font-size: 20px;
-    text-align: justify;
-    line-height: 1.7;
+    /* color: var(--medium-color); */
+    font-size: 18px;
+    /* text-align: justify; */
+    line-height: 1.5;
     text-indent: 50px;
     /* width: 700px; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 
 article h1 {
     clear: both;
+    text-decoration: underline;
+}
+
+article h2 {
+    text-decoration: underline;
 }
 
 article h3 {
-    margin: 30px auto 15px auto;
+    margin: 30px auto 0 auto;
     text-align: left;
 }
 
 header h2 {
     color: var(--light-color);
     font-weight: 100;
+    
+    
 }
 
 @media (max-width: 1000px) {
@@ -173,7 +271,9 @@ header h2 {
         text-align: center;
     }
     .project {
-        margin: 0 auto 50px auto;
+        /* margin: 0 auto 50px auto; */
+        margin: 0 auto;
+        width: max-content;
     }
     header img {
         width: 80%;

@@ -1,18 +1,44 @@
 nav {
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 50px 130px;
+    padding: 15px 130px;
     font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(248, 251, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+}
+
+@supports (-webkit-backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) or
+  (backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%)) {
+  .navbar-b.navbar-reduce {
+    transition: all 0.5s ease-in-out;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+  }
 }
 
 .links {
     display: flex;
     flex-direction: row;
+    /* justify-content: space-between; */
+    padding-right: 230px;
 }
 
 .links a {
-    color: var(--light-color);
+    color: var(--dark-color);
+    display: block;
+}
+
+.links a:hover {
+    color: var(--medium-color);
 }
 
 .logo {
@@ -40,14 +66,19 @@ nav {
     nav {
         display: block;
         text-align: center;
+        position: relative;
         /* margin-bottom: 0; */
+        padding: 0;
     }
+    body {padding: 50px 0 0 0;}
     .logo {
         margin: 0 auto;
+        padding: 0;
     }
     .links {
         display: block;
         text-align: center;
+        padding: 0;
     }
     .links>h2 {
         margin: 10px 0;
