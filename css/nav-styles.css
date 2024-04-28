@@ -3,15 +3,15 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 130px;
+    padding: 0px 130px;
     font-size: 14px;
     position: fixed;
     top: 0;
     width: 100%;
-    box-shadow: 0 0 100px rgba(211, 213, 214, 0.466);
-    background-color: rgba(220, 224, 228, 0.2);
-    backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
+    /* box-shadow: 0 0 100px rgba(211, 213, 214, 0.466); */
+    background-color: #fbfbfbbc;
+    /* backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%); */
+    /* -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%); */
 }
 
 
@@ -21,7 +21,7 @@ nav {
     transition: all 0.5s ease-in-out;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /* background-color: #131313; */
     backdrop-filter: blur(30px) saturate(160%) contrast(45%) brightness(140%);
     -webkit-backdrop-filter: blur(20px) saturate(160%) contrast(45%) brightness(140%);
   }
@@ -30,13 +30,17 @@ nav {
 .links {
     display: flex;
     flex-direction: row;
+    align-items: center;
     /* justify-content: space-between; */
     padding-right: 230px;
+    gap: 30px;
 }
 
 .links a {
     color: var(--dark-color);
     display: block;
+    font-size: 16px;
+    font-weight: 500;
 
 }
 
@@ -45,11 +49,9 @@ nav {
 }
 
 .logo {
-    background-color: var(--fade-color);
-    width: fit-content;
-    padding: 10px 25px;
+    /* background-color: var(--fade-color); */
     border-radius: 6px;
-    margin: auto 0;
+    padding: 0 10px;
 }
 
 .logo:hover {
@@ -61,7 +63,7 @@ nav {
 }
 
 .links>h2 {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     color: var(--light-color);
 }
 
