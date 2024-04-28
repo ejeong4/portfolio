@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emily Jeong</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <h2 class="logo"><a href="index.html"><img src="images/3dlogo.png" alt="logo" width="50px"></a></h2>
+        <div class="links">
+            <h2><a href="index.html">Work</a></h2>
+            <h2><a href="about.html">About</a></h2>
+            <h2>
+                <a href="resume-final.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            </h2>
+        </div>
+    </nav>
+
+    <header>
+        <img class="project-img" src="images/uroom/uroom-cover.png" alt="">
+        <h1>URoom: Designing a Roommate Finding App for College Students</h1>
+        <h3 class="timeline">December 2023-Present</h3>
+
+    </header>
+
+    <div class="sidebar">
+        <a href="#overview">Context</a>
+        <a href="#define">Defining the Problem</a>
+        <a href="#ideation">Ideation</a>
+        <a href="#lowfi">Low Fidelity Prototyping</a>
+        <a href="#hifi">High Fidelity Prototyping</a>
+    </div>
+
+    <article id="overview">
+        <h2>Overview</h2>
+
+        <h3>Role</h3>
+        <p>
+            UX Designer
+        </p>
+
+        <h3>Team</h3>
+        <p>
+            2 UX Designers
+        </p>
+
+        <h3>Contribution</h3>
+        <p>
+            UX Research, Low Fidelity Prototyping, Component Library, High Fidelity Prototyping
+        </p>
+    </article>
+
+    <article id="define">
+        <h1>Research</h1>
+
+        <h3>The Problem and Goals</h3>
+        <h3>Problem</h3>
+        <p>
+            <ul>
+                <li>There are no university platforms for finding roommates</li>
+               <li>Students resort to using social media to find roommates, but there are potential safety issues</li>
+            </ul>
+        </p>
+        
+        <h3>Goals</h3>
+            <ul>
+                <li>Make it easier to find compatible roommates, based on the following:</li>
+                <ul>
+                    <li>Lifestyle</li>
+                    <li>Preferred Housing</li>
+                </ul>
+                <li>Make it easier to contact roommates</li>
+            </ul>
+
+        <h3>Surveys and Interviews</h3>
+        <h4>Sample Survey Questions</h4>
+            <ul>
+                <li>What apps have you used to find a roommate?</li>
+                <li>What do you care most about when choosing roommates?</li>
+                <li>What are you concerned most about when choosing roommates?</li>
+            </ul>
+        <h4>Sample Interview Questions</h4>
+            <ul>
+                <li>Can you describe your best roommate experience?</li>
+                <li>
+                    If you had to go through the process of finding a roommate again, what would you do differently?</li>
+                <li>
+                    What aspects do you prioritize when looking for a roommate?</li>
+                <li>
+                    How well do you know you need to get to know a potential roommate before agreeing to live with them? </li>
+            </ul>
+        <h4>Results</h4>
+        <ul>
+            <li>Nearly 80% of surveyed students said that their university does not offer a platform to find roommates
+            <li>More than half of surveyed students preferred to live in university housing, but other roommate-finding platforms (like Roommaters, Roomie, Roomster, SpareRoom) do not focus on university housing and do not target college students
+            </li>
+            <li>Over 50% of students surveyed chose to do random roommate selection their freshmen year, but this can result in compatibility issues
+            </li>
+            <li>Over 80% of students surveyed chose their roommates in their second year, but certain housing requires several roommates to qualify, resulting in a group not big enough</li>
+            </li>
+            </ul>
+
+        <h3>Personas</h3>
+            <p>Based on needfinding results, the following personas were made with user needs in mind.</p>
+            <div class="img-grid">
+                <figure>
+                    <img src="images/uroom/persona1.png" alt="Persona 1" width="100%">
+                    <figcaption>Persona 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/uroom/persona2.png" alt="Persona 2" width="100%">
+                    <figcaption>Persona 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/uroom/persona3.png" alt="Persona 3" width="100%">
+                    <figcaption>Persona 3</figcaption>
+                </figure>
+            </div>
+
+        <h3>Affinity Diagram</h3>
+
+        <ul>
+            <li>Interview responses were sorted by the interviewees’ roommate preferences, and their roommate search process. 
+             <li>Participants mainly cited living habits (such as sleeping schedules, cleanliness, smoking etc.) and personality traits (like respectful, and friendly) as important factors in choosing a roommate
+                </li>
+            <li>When searching for a roommate, participants cited differences in how they went about choosing roommates during freshman year and their upperclassmen years.</li>
+            </li>
+        </ul>
+
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/affinity-diagram.png" alt="Affinity Diagram" width="100%">
+                <figcaption>Affinity Diagram</figcaption>
+            </figure>
+        </div>
+
+        <h3>Key Insights</h3>
+        <ul>
+            <li>When finding a roommate, respondents cared most about: Personality, Smoking preferences, and Cleaning Habits</li>
+             <li>When finding a roommate, respondents cared least about: Major, Frequency of Guests Coming Over, and Study Habits
+            </li>
+            <li>When finding a roommate, respondents were most concerned about: Whether potential roommate is trustworthy,
+                How they perceive cleanliness, and
+                Whether they are considering other people/turning down a roommate offer</li>
+        </ul>
+
+        <h3>How Might We and Dot Voting</h3>
+        <h4>Sample How Might We Statements</h4>
+        <ul>
+            <li>How might we show whether potential roommate is considering other people?
+                </li>
+            <li>How might we show if potential roommate is trustworthy?
+                </li>
+            <li>How might we show how potential roommate perceives cleanliness?
+                </li>
+            <li>How might we let users search for roommates based on personality?</li>
+        </ul>
+
+        <h4>Dot Voting and Ideation</h4>
+        <ol>
+            <li>Blue lights aren’t ideal as they make the student stop in a potentially unsafe area</li>
+            <li>When calling public safety there is uncertainty in when officers will arrive at the situation</li>
+        </ol>
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/dot-voting.png" width="100%" alt="">
+                <figcaption>Dot Voting</figcaption>
+            </figure>
+
+        </div>
+
+        <h4>Key Features</h4>
+        <ul>
+            <li>Filter to view people from their college
+                </li>
+            <li>View number on profile of how many people they are considering or interacting with
+                </li>
+            <li>Fun fact section on their profile
+                </li>
+            <li>Cleanliness quiz to match users based on rating cleanliness of rooms
+                </li>
+            <li>Profile with summary of their roommate preferences
+                </li>
+            <li>Profile for a group of people looking for an additional roommate</li>
+        </ul>
+
+        <h3>Information Architecture</h3>
+        <ul>
+            <li>Pages</li>
+                <ul>
+                    <li>Home
+                        </li>
+                    <li>Profile
+                        </li>
+                    <li>Chat</li>
+                    <li>Favorites</li>
+                </ul>
+
+        </ul>
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/info-architecture.png" width="100%" alt="">
+                <figcaption>Information Architecture</figcaption>
+            </figure>
+
+        </div>
+
+        <p></p>
+    </article>
+
+    <article id="Prototyping">
+        <h1>Prototyping</h1>
+        <h2>Low Fidelity</h2>
+        <p>27 low fidelity screens were created from our information architecture.</p>
+
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/lowfi.png" width="100%" alt="">
+                <figcaption>Low Fidelity Prototyping</figcaption>
+            </figure>
+        </div>
+
+        <h3>Design System and Component Library</h3>
+        <p>The brand and the design system were established.</p>
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/design-system.png" width="100%" alt="">
+                <figcaption>Design System</figcaption>
+            </figure>
+        </div>
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/components.png" width="100%" alt="">
+                <figcaption>Component Library</figcaption>
+            </figure>
+        </div>
+
+        <h2>High Fidelity</h2>
+        <div class="img-grid">
+            <figure>
+                <img src="images/uroom/hifi.png" width="100%" alt="">
+                <figcaption>High Fidelity Prototyping</figcaption>
+            </figure>
+        </div>
+
+
+    </article>
+    
+    <footer>
+        <p>2023 © Designed and Developed by Emily Jeong</p>
+    </footer>
+
+</body>
+
+</html>
