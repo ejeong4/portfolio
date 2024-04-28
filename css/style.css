@@ -183,9 +183,9 @@ a {
 }
 
 .project:hover {
-    /* background: #f1f1f1; */
-    animation: hoverAnimation ease-in-out .4s;
-    animation-fill-mode: both;
+    background: #f1f1f1;
+    /* animation: hoverAnimation ease-in-out .4s; */
+    /* animation-fill-mode: both; */
 }
 
 @keyframes hoverAnimation {
