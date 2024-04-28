@@ -204,6 +204,7 @@ a {
 
 .project h3 {
     color: var(--dark-color);
+    font-weight: 600;
 }
 
 .projects img {
